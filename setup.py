@@ -1,8 +1,6 @@
 from distutils.core import setup
 import os
 
-VERSION = open("VERSION").readline().rstrip()
-
 def read_requirements():
     """Parse requirements from requirements.txt."""
     reqs_path = os.path.join('.', 'requirements.txt')
@@ -19,7 +17,7 @@ setup(
   author = 'Paul Singman',
   author_email = 'paul.singman@equinox.com',
   url = 'https://github.com/equinoxfitness/datacoco.core',
-  download_url = f'https://github.com/equinoxfitness/datacoco.core/archive/{VERSION}.tar.gz',
+  download_url = f'https://github.com/equinoxfitness/datacoco.core/archive/0.4.tar.gz',
   keywords = ['helper', 'config', 'logging', 'common'],   # Keywords that define your package best
   install_requires=read_requirements()
 )
