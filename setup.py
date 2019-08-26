@@ -11,8 +11,8 @@ def read_requirements():
     return requirements
 
 setup(
-  name = 'datacoco.core',
-  packages = ['datacoco.core'],
+  name = 'cocore',
+  packages = ['cocore'],
   version = VERSION,
   license='MIT',
   description = 'Core features of common code utility',
