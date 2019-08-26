@@ -19,7 +19,7 @@ setup(
   author = 'Paul Singman',
   author_email = 'paul.singman@equinox.com',
   url = 'https://github.com/equinoxfitness/datacoco.core',
-  download_url = 'https://github.com/equinoxfitness/datacoco.core/archive/0.1.tar.gz',
+  download_url = f'https://github.com/equinoxfitness/datacoco.core/archive/{VERSION}.tar.gz',
   keywords = ['helper', 'config', 'logging', 'common'],   # Keywords that define your package best
   install_requires=read_requirements()
 )
