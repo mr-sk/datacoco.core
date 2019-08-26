@@ -11,7 +11,7 @@ def read_requirements():
 setup(
   name = 'cocore',
   packages = ['cocore'],
-  version = VERSION,
+  version = 0.4,
   license='MIT',
   description = 'Core features of common code utility',
   author = 'Paul Singman',
