@@ -3,7 +3,6 @@ Provides basic logging functionality
 """
 
 import logging
-from cocore.config import Config
 import inspect
 from datetime import datetime
 import os, sys
@@ -20,8 +19,6 @@ class Logger:
         :param project_name: if provided the logger will put its log files in a subdirectory named after the project
         :return:
         """
-        conf = Config()
-
         parent = inspect.stack()[1]
         parent_file =  inspect.getfile(parent[0])
         path, path_filename = os.path.split(parent_file)
@@ -101,8 +98,3 @@ class Logger:
             return
 
         self.logger.error("Uncaught exception", exc_info=(exc_type, exc_value, exc_traceback))
-
-        self.send_failure_email(''.join(traceback.format_tb(exc_traceback)))
-
-    def send_failure_email(self, message):
-        pass
