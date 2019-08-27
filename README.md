@@ -17,6 +17,7 @@ The logging module is a lightwight wrapper around the default logging module. Ba
 from cocore.Logger import Logger
 l = Logger()
 l.l("Your import log message here')
+```
 
 By default the log message will be saved in a logs dir of the project root, in a file named by python module and date. For example:
 ```
@@ -45,7 +46,6 @@ c['secret1']['answer_to_the_universe']
 42
 ```
 Note: The config class uses base64 encryption for any key named pwd or password will be assumed base 64 encrypted.
-
 
 ## Development
 
