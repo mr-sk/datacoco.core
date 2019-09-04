@@ -45,7 +45,7 @@ c = Config()
 c['secret1']['answer_to_the_universe']
 42
 ```
-Note: The config class assumes base64 encryption for any key named pwd or password.
+Note: The config class assumes base64 hashing for any key named pwd or password.
 
 ## Development
 
