@@ -25,7 +25,7 @@ cat logs/test.py-20190827-135736.log
 2019-08-27 13:57:36,471 Your important message here
 ```
 
-Optionally, paramters `logname` and `project_name` can be passed on class instantiation to
+Optionally, parameters `logname` and `project_name` can be passed on class instantiation to
 customize the logfile name, and logfile path respectively.
 
 ## Config
